@@ -1,0 +1,48 @@
+version: 2
+
+
+models:
+  - name: fct_orders
+  - name: dim_customers
+    columns:
+      - name: CUSTOMER_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_date
+    columns:
+      - name: DATE_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_geography
+    columns:
+      - name: GEOGRAPHY_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_brands
+    columns:
+      - name: BRAND_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_categories
+    columns:
+      - name: CATEGORY_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_stores
+    columns:
+      - name: STORE_PK
+        tests:
+          - unique
+          - not_null
+  - name: dim_staffs
+    columns:
+      - name: STAFF_PK
+        tests:
+          - unique
+          - not_null
+

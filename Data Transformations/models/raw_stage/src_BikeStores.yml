@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: Sales
+    description: contains order info
+    database: raw-data-388602
+    schema: Sales
+    tables:
+      - name: Customers
+      - name: Orders
+      - name: Staffs
+      - name: Stores
+      - name: Order_Items
+
+  - name: Production
+    description: contains stock and inventory info
+    database: raw-data-388602
+    schema: Production
+    tables:
+      - name: Categories
+      - name: Products
+      - name: Stocks
+      - name: Brands
