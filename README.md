@@ -1,4 +1,4 @@
-# OLTP (on-premise) to OLAP Data Warehouse Transformation and Analytics:
+# Bike Sales (Enterprise Data Analytics)
 ## Description
 
 **Overview**: This project demonstrates how transactional data ingested from POS systems into an on-prem relational database can be modeled and loaded onto a fully-managed cloud data warehouse for efficient querying and analysis by various departments in a firm. I used an ELT process to load and transform the data right in the warehouse. The OLAP (Online Analytical Processing) model which is used for reporting can be broken down into various layers. Rather than sticking to a pure Kimball or Inmon warehousing approach, I decided to build the foundation of the OLAP model using a Data Vault 2.0. It's layers can be defined as the following:
