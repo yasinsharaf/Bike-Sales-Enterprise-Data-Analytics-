@@ -11,7 +11,7 @@
 
 The Data Vault solves this approach by seperating the business key from attributes subject to change, and stores those attributes in satellite tables. It also keeps track of load dates and other metadata, and contains optional tables such as PITs to keep track of historical attribute data. This method would minimize architecture and design complications which businesses have to deal with in order to keep all versions of a record's attributes.
 
-**Limitations**: This model takes longer to design compared to traditional Kimball and Inmon warehouse designs, which more or less use traditional prinples such as 3NF and denormalized schemas. Therefore, a firm implementing this strategy would have either have to account for the training of current specialists or outsource a data specialist experienced in this model. It also requires more work, as you still need to build a star or snowflake dimensional schema on top of this model as I have demonstrated.
+**Limitations**: This model takes longer to design compared to traditional Kimball and Inmon warehouse designs, which more or less use traditional principles such as 3NF and denormalized schemas. Therefore, a firm implementing this strategy would have either have to account for the training of current specialists or outsource a data specialist experienced in this model. It also requires more work, as you still need to build a star or snowflake dimensional schema on top of this model as I have demonstrated.
 
 Other limitations related to the project design itself includes a lack of ETL/ELT automation (uses SQL Server to export CSVs and load them manually into BigQuery), and no live connection to data from the reporting layer to BigQuery.
 
