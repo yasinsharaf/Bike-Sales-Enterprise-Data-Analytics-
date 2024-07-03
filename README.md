@@ -27,7 +27,16 @@ Other limitations related to the project design itself includes a lack of ETL/EL
 - **Installation**: The software and its tutorials can be found on the Microsoft website.
 
 ## How to Run
-Once you have the the on-premise software installed (SQL Server, SSMS, Power BI Desktop), (1) run the queries for the bike sales sample database in SSMS (2) create a matching schema of empty tables in BigQuery (3) export the tables as CSV files into the matching tables (4) connect dbt to your BigQuery warehouse and make data vault (5) ensure validation and testing via YAML files in dbt on primary keys (6) create dimensional model (7) download CSV files of each fact/dimension and load into Power BI (8) perform necessary modeling and transformations to develop report (9) Enforce RLS as necessary
+1. Install the on-premise software (SQL Server, SSMS, Power BI Desktop)
+2. Run the queries for the bike sales sample database in SQL Server Management Studio
+3. Create a matching schema of empty tables in BigQuery
+4. Export the tables as CSV files into the matching tables
+5. Connect dbt to your BigQuery warehouse and make data vault
+6. Ensure validation and testing via YAML files in dbt on primary keys
+7. Create dimensional model
+8. Download CSV files of each fact/dimension and load into Power BI
+9. Perform necessary modeling and transformations to develop report
+10. Enforce RLS in Power BI as necessary
 
 
 
